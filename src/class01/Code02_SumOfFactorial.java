@@ -1,5 +1,10 @@
 package class01;
 
+import java.util.HashSet;
+
+/**
+ * @author mac
+ */
 public class Code02_SumOfFactorial {
 
 	public static long f1(int N) {
@@ -28,10 +33,27 @@ public class Code02_SumOfFactorial {
 		return ans;
 	}
 
+
+
+
+
+
+
+
 	public static void main(String[] args) {
+
+
 		int N = 10;
 		System.out.println(f1(N));
 		System.out.println(f2(N));
+
+//		HashSet<Integer> integers = new HashSet<>();
+//		integers.add(1);
+//		integers.add(1);
+//		System.out.println(integers.toString());
 	}
+
+
+
 
 }

@@ -1,4 +1,4 @@
-package class07;
+package class07dontTosee;
 
 public class Code03_PathSum {
 

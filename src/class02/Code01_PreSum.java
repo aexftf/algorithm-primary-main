@@ -1,5 +1,8 @@
 package class02;
 
+/**
+ * @author mac
+ */
 public class Code01_PreSum {
 
 	public static class RangeSum1 {

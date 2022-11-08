@@ -27,6 +27,7 @@ public class ShowComparator {
 		// 如果返回负数，认为第一个参数应该排在前面
 		// 如果返回正数，认为第二个参数应该排在前面
 		// 如果返回0，认为谁放前面无所谓
+		//前面小返回1，前面大返回-1 ，前面减去后面
 		@Override
 		public int compare(Student o1, Student o2) {
 			if (o1.id < o2.id) {

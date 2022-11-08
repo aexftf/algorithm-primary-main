@@ -12,7 +12,13 @@ public class Code01_ReverseList {
 		public Node(int data) {
 			value = data;
 		}
+
+
 	}
+
+
+
+
 
 	public static class DoubleNode {
 		public int value;
@@ -49,6 +55,18 @@ public class Code01_ReverseList {
 		return pre;
 	}
 
+
+
+
+
+
+
+
+
+
+
+
+	//-------------------------------------------------------
 	public static Node testReverseLinkedList(Node head) {
 		if (head == null) {
 			return null;

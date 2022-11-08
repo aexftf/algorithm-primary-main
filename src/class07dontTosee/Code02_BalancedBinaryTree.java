@@ -1,4 +1,4 @@
-package class07;
+package class07dontTosee;
 
 // 测试链接：https://leetcode.com/problems/balanced-binary-tree
 public class Code02_BalancedBinaryTree {
