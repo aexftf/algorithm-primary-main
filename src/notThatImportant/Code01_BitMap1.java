@@ -1,10 +1,11 @@
-package class05;
+package notThatImportant;
 
 import java.util.HashSet;
 
-public class Code02_BitMap2 {
+// 这个类的实现是错误的
+// 请问为什么？
+public class Code01_BitMap1 {
 
-	// 这个类的实现是正确的
 	public static class BitMap {
 
 		private long[] bits;
@@ -14,25 +15,19 @@ public class Code02_BitMap2 {
 		}
 
 		public void add(int num) {
-			bits[num >> 6] |= (1L << (num & 63));
+			bits[num >> 6] |= (1 << (num & 63));
 		}
 
 		public void delete(int num) {
-			bits[num >> 6] &= ~(1L << (num & 63));
+			bits[num >> 6] &= ~(1 << (num & 63));
 		}
 
 		public boolean contains(int num) {
-			return (bits[num >> 6] & (1L << (num & 63))) != 0;
+			return (bits[num >> 6] & (1 << (num & 63))) != 0;
 		}
 
 	}
 
-
-
-
-
-
-	//....................................................................
 	public static void main(String[] args) {
 		System.out.println("测试开始！");
 		int max = 10000;

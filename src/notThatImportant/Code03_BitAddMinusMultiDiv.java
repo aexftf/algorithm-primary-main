@@ -1,4 +1,4 @@
-package class05;
+package notThatImportant;
 
 // 测试链接：https://leetcode.com/problems/divide-two-integers
 public class Code03_BitAddMinusMultiDiv {
