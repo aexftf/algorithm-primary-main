@@ -41,6 +41,11 @@ public class Code03_PartitionAndQuickSort {
 		arr[j] = tmp;
 	}
 
+
+
+
+
+
 	// arr[L...R]范围上，拿arr[R]做划分值，
 	// L....R < = >
 	public static int[] partition(int[] arr, int L, int R) {
@@ -76,6 +81,19 @@ public class Code03_PartitionAndQuickSort {
 		process(arr, equalE[1] + 1, R);
 	}
 
+
+
+
+
+
+
+
+
+
+
+
+	//***********************************************************
+
 	public static class Job {
 		public int L;
 		public int R;
@@ -85,6 +103,11 @@ public class Code03_PartitionAndQuickSort {
 			R = right;
 		}
 	}
+
+
+
+
+
 
 	public static void quickSort2(int[] arr) {
 		if (arr == null || arr.length < 2) {
@@ -103,6 +126,7 @@ public class Code03_PartitionAndQuickSort {
 			}
 		}
 	}
+
 
 	public static int[] netherlandsFlag(int[] arr, int L, int R) {
 		if (L > R) {
@@ -127,6 +151,10 @@ public class Code03_PartitionAndQuickSort {
 		return new int[] { less + 1, more };
 	}
 
+
+
+
+	//******************************************************
 	public static void quickSort3(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;
@@ -184,6 +212,12 @@ public class Code03_PartitionAndQuickSort {
 		return true;
 	}
 
+
+
+
+
+	//*******************************************************************
+
 	// for test
 	public static void printArray(int[] arr) {
 		if (arr == null) {
@@ -194,6 +228,7 @@ public class Code03_PartitionAndQuickSort {
 		}
 		System.out.println();
 	}
+
 
 	// for test
 	public static void main(String[] args) {

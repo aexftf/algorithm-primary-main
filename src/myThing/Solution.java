@@ -2,6 +2,7 @@ package myThing;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * 正式面试用
@@ -9,9 +10,92 @@ import java.util.Arrays;
 public class Solution {
 
 
-    public void solveFunctions() {
+    public static void main(String[] args) {
+
+
+
+
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int ans = create(n);
+//
+
+
+
+
+
+
+
+
+        int[][] arr = new int[][]
+                {
+                        {1, 2},
+                        {1, 2},
+                        {12, 67},
+                        {3, 8},
+                        {1, 2},
+                        {3, 4}
+                };
+
+        System.out.println(arr[0].length);
+    }
+
+    public static int create(int n) {
+
+        //生成数列
+
+
+        if (n - 1 == 0) {
+            return 1;
+        }
+        if (n - 1 % 2 == 0) {
+            return create(n - 1) + 1;
+        }
+        if (n + 1 % 2 != 0) {
+            return create(n - 1) * 2;
+        }
+        else   {
+            return -1;
+        }
+
+
+    }
+    public static int create(int[][]arr ,int n,int m, int k) {
+
+        //生成
+        int [][]ans = new int[n][m];
+        int []row = new int[n];
+        int []col = new int[m];
+
+        for (int i = 0; i <ans.length ; i++) {
+            for (int j = 0; j <ans[0].length ; j++) {
+                row[i] = arr[i][j];
+                row[i] = arr[i][j];
+
+            }
+
+
+        }
+
+return -1;
+    }
+
+
+
+
+
+    public static void solveFunctions() {
         //Example
     }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -56,7 +140,7 @@ public class Solution {
 
 
 
-
+//合并区间（笔试）
 //[[1,3],[2,6],[8,10],[15,18],[1,318]]
 //[[1,6],[8,10],[15,18]]
     public int[][] merge (int[][] arr) {
@@ -90,38 +174,10 @@ public class Solution {
     }
 
 
-    public static void main(String[] args) {
-//        int[][] arr =  new int[2][2];
-//        for (int i = 0; i <arr.length ; i++) {
-////            arr[i][0]=(int)Math.random();
-//
-//            for (int j = 0; j <arr[i].length ; j++) {
-//                arr[i][j]=(int)Math.random();
-//                System.out.println(arr[i][j]);
-//            }
-//        }
-//        System.out.println(arr.toString());
-//
-//    }
 
-        int[] nums1 = {166, 44, 77, 222, 888, 34334, 6756};
-        int[] nums2 = {1, 2, 3, 4, 5, 6};
-
-
-        for (int i = 0; i <nums1.length ; i++) {
-            int[] ints = merge2(nums1, 7, nums2, 6);
-
-            System.out.println(ints[i]);
-        }
-
-    }
     //腾讯一面（解决搜索问题二分或者暴力）
     public static  int findFackCore(int[]cores){
-
-
         int first=cores[0];
-
-
         for (int i = 1; i < cores.length+1; i++) {
 
            int curr=cores[i];
@@ -134,18 +190,8 @@ public class Solution {
               }
 
            }
-
-
-
         }
-
-
-
-
-
         return -1;
-
-
     }
 
 

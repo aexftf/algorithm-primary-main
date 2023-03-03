@@ -15,6 +15,10 @@ public class Code06_InsertionSort {
 		}
 	}
 
+
+
+
+
 	// i和j,数交换
 	public static void swap(int[] arr, int i, int j) {
 		int tmp = arr[i];
@@ -22,6 +26,16 @@ public class Code06_InsertionSort {
 		arr[j] = tmp;
 	}
 
+
+
+
+
+
+
+
+
+
+	//------------------------------------------------------------------
 	// for test
 	public static void comparator(int[] arr) {
 		Arrays.sort(arr);

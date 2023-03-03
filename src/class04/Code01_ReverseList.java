@@ -42,6 +42,10 @@ public class Code01_ReverseList {
 		return pre;
 	}
 
+
+
+
+
 	public static DoubleNode reverseDoubleList(DoubleNode head) {
 		DoubleNode pre = null;
 		DoubleNode next = null;
