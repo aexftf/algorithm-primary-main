@@ -16,7 +16,7 @@ public class Code03_DoubleLinkedListToDeque {
 			next = null;
 		}
 	}
-
+//**********************************
 	public static class MyDeque<V> {
 		private Node<V> head;
 		private Node<V> tail;
@@ -114,6 +114,10 @@ public class Code03_DoubleLinkedListToDeque {
 
 	}
 
+
+
+
+	//--------------------------------------------------------
 	public static void testDeque() {
 		MyDeque<Integer> myDeque = new MyDeque<>();
 		Deque<Integer> test = new LinkedList<>();
@@ -181,6 +185,8 @@ public class Code03_DoubleLinkedListToDeque {
 		}
 		System.out.println("测试结束！");
 	}
+
+
 
 	public static void main(String[] args) {
 		testDeque();

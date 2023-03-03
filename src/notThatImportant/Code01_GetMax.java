@@ -1,4 +1,4 @@
-package class08;
+package notThatImportant;
 
 public class Code01_GetMax {
 
@@ -29,6 +29,9 @@ public class Code01_GetMax {
 		return a * returnA + b * returnB;
 	}
 
+
+
+	//=------------------------------------
 	public static void main(String[] args) {
 		int a = -16;
 		int b = -19;

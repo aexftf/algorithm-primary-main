@@ -46,6 +46,24 @@ public class Code03_PartitionAndQuickSort {
 
 
 
+
+
+	public static void quickSort1(int[] arr) {
+		if (arr == null || arr.length < 2) {
+			return;
+		}
+		process(arr, 0, arr.length - 1);
+	}
+
+	public static void process(int[] arr, int L, int R) {
+		if (L >= R) {
+			return;
+		}
+		int[] equalE = partition(arr, L, R);
+		process(arr, L, equalE[0] - 1);
+		process(arr, equalE[1] + 1, R);
+	}
+
 	// arr[L...R]范围上，拿arr[R]做划分值，
 	// L....R < = >
 	public static int[] partition(int[] arr, int L, int R) {
@@ -64,24 +82,6 @@ public class Code03_PartitionAndQuickSort {
 		swap(arr, moreL, R);
 		return new int[] { lessR + 1, moreL };
 	}
-
-	public static void quickSort1(int[] arr) {
-		if (arr == null || arr.length < 2) {
-			return;
-		}
-		process(arr, 0, arr.length - 1);
-	}
-
-	public static void process(int[] arr, int L, int R) {
-		if (L >= R) {
-			return;
-		}
-		int[] equalE = partition(arr, L, R);
-		process(arr, L, equalE[0] - 1);
-		process(arr, equalE[1] + 1, R);
-	}
-
-
 
 
 

@@ -13,6 +13,10 @@ public class Code03_PathSum {
 		}
 	}
 
+
+
+
+	//*******************************************************
 	public static boolean isSum = false;
 
 	public static boolean hasPathSum(TreeNode root, int sum) {
@@ -40,6 +44,11 @@ public class Code03_PathSum {
 			process(x.right, preSum, sum);
 		}
 	}
+
+
+
+
+
 
 //	public static boolean hasPathSum(TreeNode root, int sum) {
 //		if (root == null) {
