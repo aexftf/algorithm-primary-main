@@ -12,16 +12,7 @@ public class TraversalBinaryTree {
 		}
 	}
 
-	public static void f(Node head) {
-		if (head == null) {
-			return;
-		}
-		// 1
-		f(head.left);
-		// 2
-		f(head.right);
-		// 3
-	}
+
 
 	// 先序打印所有节点
 	public static void pre(Node head) {
@@ -50,6 +41,22 @@ public class TraversalBinaryTree {
 		pos(head.right);
 		System.out.println(head.value);
 	}
+
+
+
+
+
+	public static void f(Node head) {
+		if (head == null) {
+			return;
+		}
+		// 1
+		f(head.left);
+		// 2
+		f(head.right);
+		// 3
+	}
+
 
 	public static void main(String[] args) {
 		Node head = new Node(1);

@@ -47,6 +47,14 @@ public class Code02_LinkedListToQueueAndStack {
 			size++;
 		}
 
+
+
+
+
+
+
+
+
 		// C/C++的同学需要做节点析构的工作
 		public V poll() {
 			V ans = null;

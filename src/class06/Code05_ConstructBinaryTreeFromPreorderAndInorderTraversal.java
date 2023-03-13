@@ -15,12 +15,21 @@ public class Code05_ConstructBinaryTreeFromPreorderAndInorderTraversal {
 		}
 	}
 
+
+
+
+
+
+
 	public static TreeNode buildTree1(int[] pre, int[] in) {
 		if (pre == null || in == null || pre.length != in.length) {
 			return null;
 		}
 		return f(pre, 0, pre.length - 1, in, 0, in.length - 1);
 	}
+
+
+
 
 	// 有一棵树，先序结果是pre[L1...R1]，中序结果是in[L2...R2]
 	// 请建出整棵树返回头节点
@@ -41,6 +50,12 @@ public class Code05_ConstructBinaryTreeFromPreorderAndInorderTraversal {
 		return head;
 	}
 
+
+
+
+
+
+
 	public static TreeNode buildTree2(int[] pre, int[] in) {
 		if (pre == null || in == null || pre.length != in.length) {
 			return null;
@@ -51,6 +66,8 @@ public class Code05_ConstructBinaryTreeFromPreorderAndInorderTraversal {
 		}
 		return g(pre, 0, pre.length - 1, in, 0, in.length - 1, valueIndexMap);
 	}
+
+
 
 	// 有一棵树，先序结果是pre[L1...R1]，中序结果是in[L2...R2]
 	// 请建出整棵树返回头节点

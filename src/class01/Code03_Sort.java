@@ -36,6 +36,7 @@ public class Code03_Sort {
 		}
 	}
 
+
 	public static void insertSort1(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;
@@ -43,12 +44,21 @@ public class Code03_Sort {
 		int N = arr.length;
 		for (int end = 1; end < N; end++) {
 			int newNumIndex = end;
+
 			while (newNumIndex - 1 >= 0 && arr[newNumIndex - 1] > arr[newNumIndex]) {
 				swap(arr, newNumIndex - 1, newNumIndex);
 				newNumIndex--;
 			}
 		}
 	}
+
+
+
+
+
+
+
+
 
 	public static void insertSort2(int[] arr) {
 		if (arr == null || arr.length < 2) {
@@ -62,7 +72,22 @@ public class Code03_Sort {
 		}
 	}
 
-//************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//************************************----------------------------------
 	public static void printArray(int[] arr) {
 		for (int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i] + " ");
