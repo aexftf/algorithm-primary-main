@@ -23,6 +23,8 @@ public class Code03_Comp {
 		arr[j] = tmp;
 	}
 
+
+
 	public static void insertionSort(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;
@@ -34,6 +36,11 @@ public class Code03_Comp {
 		}
 	}
 
+
+
+
+
+
 	// 返回一个数组arr，arr长度[0,maxLen-1],arr中的每个值[0,maxValue-1]
 	public static int[] lenRandomValueRandom(int maxLen, int maxValue) {
 		int len = (int) (Math.random() * maxLen);
@@ -43,6 +50,13 @@ public class Code03_Comp {
 		}
 		return ans;
 	}
+
+
+
+
+
+
+
 
 	public static int[] copyArray(int[] arr) {
 		int[] ans = new int[arr.length];
@@ -67,24 +81,11 @@ public class Code03_Comp {
 		return true;
 	}
 
-	public static void main(String[] args) {
-		int maxLen = 5;
-		int maxValue = 1000;
-		int testTime = 10000;
-		for (int i = 0; i < testTime; i++) {
-			int[] arr1 = lenRandomValueRandom(maxLen, maxValue);
-			int[] tmp = copyArray(arr1);
-			selectionSort(arr1);
-			if (!isSorted(arr1)) {
-				for (int j = 0; j < tmp.length; j++) {
-					System.out.print(tmp[j] + " ");
-				}
-				System.out.println();
-				System.out.println("选择排序错了！");
-				break;
-			}
-		}
 
-	}
+
+
+
+
+
 
 }

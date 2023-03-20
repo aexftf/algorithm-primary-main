@@ -55,14 +55,22 @@ public class Code05_IsBinarySearchTree {
 //		return new Info(isBST, max, min);
 //	}
 
+
+
+
+
+
+
 	public static Info process(TreeNode x) {
 		if (x == null) {
 			return null;
 		}
 		Info leftInfo = process(x.left);
 		Info rightInfo = process(x.right);
+
 		int max = x.val;
 		int min = x.val;
+
 		if (leftInfo != null) {
 			max = Math.max(leftInfo.max, max);
 			min = Math.min(leftInfo.min, min);
@@ -76,10 +84,16 @@ public class Code05_IsBinarySearchTree {
 		boolean rightIsBst = rightInfo == null ? true : rightInfo.isBST;
 		boolean leftMaxLessX = leftInfo == null ? true : (leftInfo.max < x.val);
 		boolean rightMinMoreX = rightInfo == null ? true : (rightInfo.min > x.val);
+
 		if (leftIsBst && rightIsBst && leftMaxLessX && rightMinMoreX) {
 			isBST = true;
 		}
 		return new Info(isBST, max, min);
 	}
+
+
+
+
+
 
 }

@@ -73,25 +73,6 @@ public class MySolution {
 
 
 
-    public static Object[] computeCount(int N, int M, int P) {
-//第一行三个正整数N,M,P，含义如题面。
-//
-//对于所有数据，1≤M≤N≤12；0≤P≤109
-
-
-        ArrayList<ArrayList<Integer>> arrayLists = new ArrayList<>();
-////giveWay
-
-        ArrayList prosses = prosses(N, M, P, N);
-//price
-        Object[] ints = (Object[]) prosses.toArray();
-        if (prosses.isEmpty()|| !(ints[1] !=Integer.valueOf(0)) ||!(ints[0] !=Integer.valueOf(1)){
-            return ints;
-        }
-
-    return -1;
-
-    }
 
     public static ArrayList<Integer> prosses(int N,int M,int P,int x) {
         ArrayList<Integer> integers = new ArrayList<>();

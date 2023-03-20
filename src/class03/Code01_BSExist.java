@@ -2,12 +2,12 @@ package class03;
 
 import java.util.Arrays;
 
-
+//二分
 public class Code01_BSExist {
 
 	/** @date 2022/10/26
 	* @user Jack Geller
-	* Description TODO
+	* Description 二分查找
 	 * @param arr
 	 * @param num
 	 * @return boolean
@@ -17,10 +17,13 @@ public class Code01_BSExist {
 		if (arr == null || arr.length == 0) {
 			return false;
 		}
+
 		int L = 0;
 		int R = arr.length - 1;
+
 		while (L <= R) {
 			int mid = (L + R) / 2;
+
 			if (arr[mid] == num) {
 				return true;
 			} else if (arr[mid] < num) {
@@ -31,6 +34,15 @@ public class Code01_BSExist {
 		}
 		return false;
 	}
+
+
+
+
+
+
+
+
+
 
 	// for test
 	public static boolean test(int[] sortedArr, int num) {

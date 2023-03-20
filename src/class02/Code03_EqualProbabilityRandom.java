@@ -32,6 +32,8 @@ public class Code03_EqualProbabilityRandom {
 
 	}
 
+
+
 	// 底层依赖一个以p概率返回0，以1-p概率返回1的随机函数rand01p
 	// 如何加工出等概率返回0和1的函数
 	public static int rand01(RandomBox randomBox) {
@@ -41,6 +43,15 @@ public class Code03_EqualProbabilityRandom {
 		} while (num == randomBox.random());
 		return num;
 	}
+
+
+
+
+
+
+
+
+
 
 	public static void main(String[] args) {
 		int[] count = new int[2];// 0 1

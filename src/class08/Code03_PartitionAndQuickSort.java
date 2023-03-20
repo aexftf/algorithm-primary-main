@@ -8,6 +8,7 @@ public class Code03_PartitionAndQuickSort {
 		int lessEqualR = -1;
 		int index = 0;
 		int N = arr.length;
+
 		while (index < N) {
 			if (arr[index] <= arr[N - 1]) {
 				swap(arr, ++lessEqualR, index++);
@@ -15,25 +16,33 @@ public class Code03_PartitionAndQuickSort {
 				index++;
 			}
 		}
+
 	}
 
-	public static void splitNum2(int[] arr) {
-		int N = arr.length;
-		int lessR = -1;
-		int moreL = N - 1;
-		int index = 0;
-		// arr[N-1]
-		while (index < moreL) {
-			if (arr[index] < arr[N - 1]) {
-				swap(arr, ++lessR, index++);
-			} else if (arr[index] > arr[N - 1]) {
-				swap(arr, --moreL, index);
-			} else {
-				index++;
-			}
-		}
-		swap(arr, moreL, N - 1);
-	}
+
+
+
+
+
+
+
+//	public static void splitNum2(int[] arr) {
+//		int N = arr.length;
+//		int lessR = -1;
+//		int moreL = N - 1;
+//		int index = 0;
+//		// arr[N-1]
+//		while (index < moreL) {
+//			if (arr[index] < arr[N - 1]) {
+//				swap(arr, ++lessR, index++);
+//			} else if (arr[index] > arr[N - 1]) {
+//				swap(arr, --moreL, index);
+//			} else {
+//				index++;
+//			}
+//		}
+//		swap(arr, moreL, N - 1);
+//	}
 
 	public static void swap(int[] arr, int i, int j) {
 		int tmp = arr[i];
@@ -55,6 +64,11 @@ public class Code03_PartitionAndQuickSort {
 		process(arr, 0, arr.length - 1);
 	}
 
+
+
+
+
+
 	public static void process(int[] arr, int L, int R) {
 		if (L >= R) {
 			return;
@@ -63,6 +77,10 @@ public class Code03_PartitionAndQuickSort {
 		process(arr, L, equalE[0] - 1);
 		process(arr, equalE[1] + 1, R);
 	}
+
+
+
+
 
 	// arr[L...R]范围上，拿arr[R]做划分值，
 	// L....R < = >
@@ -103,6 +121,12 @@ public class Code03_PartitionAndQuickSort {
 			R = right;
 		}
 	}
+
+
+
+
+
+
 
 
 
@@ -171,6 +195,13 @@ public class Code03_PartitionAndQuickSort {
 		process3(arr, L, equalArea[0] - 1);
 		process3(arr, equalArea[1] + 1, R);
 	}
+
+
+
+
+
+
+
 
 	// for test
 	public static int[] generateRandomArray(int maxSize, int maxValue) {

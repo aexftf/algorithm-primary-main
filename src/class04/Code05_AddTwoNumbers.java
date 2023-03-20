@@ -3,21 +3,6 @@ package class04;
 // 测试链接：https://leetcode.com/problems/add-two-numbers/
 public class Code05_AddTwoNumbers {
 
-	// 不要提交这个类
-	public static class ListNode {
-		public int val;
-		public ListNode next;
-
-		public ListNode(int val) {
-			this.val = val;
-		}
-
-		public ListNode(int val, ListNode next) {
-			this.val = val;
-			this.next = next;
-		}
-	}
-
 	public static ListNode addTwoNumbers(ListNode head1, ListNode head2) {
 		int len1 = listLength(head1);
 		int len2 = listLength(head2);
@@ -58,5 +43,26 @@ public class Code05_AddTwoNumbers {
 		}
 		return len;
 	}
+
+
+
+
+
+
+	// 不要提交这个类
+	public static class ListNode {
+		public int val;
+		public ListNode next;
+
+		public ListNode(int val) {
+			this.val = val;
+		}
+
+		public ListNode(int val, ListNode next) {
+			this.val = val;
+			this.next = next;
+		}
+	}
+
 
 }

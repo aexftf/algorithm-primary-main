@@ -80,6 +80,9 @@ public class Code05_ConstructBinaryTreeFromPreorderAndInorderTraversal {
 		if (L1 == R1) {
 			return head;
 		}
+
+
+
 		int find = valueIndexMap.get(pre[L1]);
 		head.left = g(pre, L1 + 1, L1 + find - L2, in, L2, find - 1, valueIndexMap);
 		head.right = g(pre, L1 + find - L2 + 1, R1, in, find + 1, R2, valueIndexMap);

@@ -35,6 +35,14 @@ public class Code06_InsertionSort {
 
 
 
+
+
+
+
+
+
+
+
 	//------------------------------------------------------------------
 	// for test
 	public static void comparator(int[] arr) {

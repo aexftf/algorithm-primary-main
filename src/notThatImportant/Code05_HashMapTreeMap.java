@@ -1,4 +1,4 @@
-package class03;
+package notThatImportant;
 
 import java.util.HashMap;
 import java.util.TreeMap;
@@ -52,6 +52,17 @@ public class Code05_HashMapTreeMap {
 
 		System.out.println("===================");
 
+
+
+
+
+
+
+
+
+
+
+		//
 		TreeMap<Integer, String> treeMap1 = new TreeMap<>();
 
 		treeMap1.put(3, "我是3");

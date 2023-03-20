@@ -22,6 +22,11 @@ public class Code03_Sort {
 		}
 	}
 
+
+
+
+
+
 	public static void bubbleSort(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;
@@ -29,12 +34,16 @@ public class Code03_Sort {
 		int N = arr.length;
 		for (int end = N - 1; end >= 0; end--) {
 			for (int second = 1; second <= end; second++) {
+
 				if (arr[second - 1] > arr[second]) {
 					swap(arr, second - 1, second);
 				}
 			}
 		}
 	}
+
+
+
 
 
 	public static void insertSort1(int[] arr) {

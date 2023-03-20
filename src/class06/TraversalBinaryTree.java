@@ -58,6 +58,24 @@ public class TraversalBinaryTree {
 	}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	public static void main(String[] args) {
 		Node head = new Node(1);
 		head.left = new Node(2);

@@ -1,4 +1,4 @@
-package class01;
+package notThatImportant;
 
 import java.util.HashSet;
 
@@ -15,6 +15,13 @@ public class Code02_SumOfFactorial {
 		return ans;
 	}
 
+
+
+
+
+
+
+
 	public static long factorial(int N) {
 		long ans = 1;
 		for (int i = 1; i <= N; i++) {
@@ -22,6 +29,9 @@ public class Code02_SumOfFactorial {
 		}
 		return ans;
 	}
+
+
+
 
 	public static long f2(int N) {
 		long ans = 0;
@@ -32,6 +42,12 @@ public class Code02_SumOfFactorial {
 		}
 		return ans;
 	}
+
+
+
+
+
+
 
 
 
