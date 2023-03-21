@@ -1,4 +1,4 @@
-package class04;
+package notThatImportant;
 
 // 测试链接：https://leetcode.com/problems/reverse-nodes-in-k-group/
 public class Code04_ReverseNodesInKGroup {
@@ -8,6 +8,8 @@ public class Code04_ReverseNodesInKGroup {
 		public int val;
 		public ListNode next;
 	}
+
+
 
 	public static ListNode reverseKGroup(ListNode head, int k) {
 		ListNode start = head;

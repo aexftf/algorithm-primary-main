@@ -29,12 +29,14 @@ public class Code03_PathSum {
 	}
 
 	public static void process(TreeNode x, int preSum, int sum) {
+
 		if (x.left == null && x.right == null) {
 			if (x.val + preSum == sum) {
 				isSum = true;
 			}
 			return;
 		}
+
 		// x是非叶节点
 		preSum += x.val;
 		if (x.left != null) {

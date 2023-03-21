@@ -31,6 +31,7 @@ public class Code03_Sort {
 		if (arr == null || arr.length < 2) {
 			return;
 		}
+
 		int N = arr.length;
 		for (int end = N - 1; end >= 0; end--) {
 			for (int second = 1; second <= end; second++) {

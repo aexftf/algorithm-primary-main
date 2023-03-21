@@ -4,20 +4,6 @@ import java.util.Stack;
 
 public class Code03_PartitionAndQuickSort {
 
-	public static void splitNum1(int[] arr) {
-		int lessEqualR = -1;
-		int index = 0;
-		int N = arr.length;
-
-		while (index < N) {
-			if (arr[index] <= arr[N - 1]) {
-				swap(arr, ++lessEqualR, index++);
-			} else {
-				index++;
-			}
-		}
-
-	}
 
 
 
@@ -54,9 +40,6 @@ public class Code03_PartitionAndQuickSort {
 
 
 
-
-
-
 	public static void quickSort1(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;
@@ -65,15 +48,13 @@ public class Code03_PartitionAndQuickSort {
 	}
 
 
-
-
-
-
 	public static void process(int[] arr, int L, int R) {
 		if (L >= R) {
 			return;
 		}
 		int[] equalE = partition(arr, L, R);
+		//equalE[0]是相等的滴第一个数
+        //equalE[1]是相等的滴最后一个数
 		process(arr, L, equalE[0] - 1);
 		process(arr, equalE[1] + 1, R);
 	}
@@ -88,6 +69,7 @@ public class Code03_PartitionAndQuickSort {
 		int lessR = L - 1;
 		int moreL = R;
 		int index = L;
+
 		while (index < moreL) {
 			if (arr[index] < arr[R]) {
 				swap(arr, ++lessR, index++);
@@ -110,6 +92,25 @@ public class Code03_PartitionAndQuickSort {
 
 
 
+
+
+
+
+
+
+
+
+
+	// for test
+	public static int[] generateRandomArray(int maxSize, int maxValue) {
+		int[] arr = new int[(int) ((maxSize + 1) * Math.random())];
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = (int) ((maxValue + 1) * Math.random()) - (int) (maxValue * Math.random());
+		}
+		return arr;
+	}
+
+
 	//***********************************************************
 
 	public static class Job {
@@ -123,8 +124,67 @@ public class Code03_PartitionAndQuickSort {
 	}
 
 
+	// for test
+	public static int[] copyArray(int[] arr) {
+		if (arr == null) {
+			return null;
+		}
+		int[] res = new int[arr.length];
+		for (int i = 0; i < arr.length; i++) {
+			res[i] = arr[i];
+		}
+		return res;
+	}
+
+	// for test
+	public static boolean isEqual(int[] arr1, int[] arr2) {
+		if ((arr1 == null && arr2 != null) || (arr1 != null && arr2 == null)) {
+			return false;
+		}
+		if (arr1 == null && arr2 == null) {
+			return true;
+		}
+		if (arr1.length != arr2.length) {
+			return false;
+		}
+		for (int i = 0; i < arr1.length; i++) {
+			if (arr1[i] != arr2[i]) {
+				return false;
+			}
+		}
+		return true;
+	}
 
 
+//	public static void splitNum1(int[] arr) {
+//		int lessEqualR = -1;
+//		int index = 0;
+//		int N = arr.length;
+//
+//		while (index < N) {
+//			if (arr[index] <= arr[N - 1]) {
+//				swap(arr, ++lessEqualR, index++);
+//			} else {
+//				index++;
+//			}
+//		}
+
+//	}
+
+
+
+	//*******************************************************************
+
+	// for test
+	public static void printArray(int[] arr) {
+		if (arr == null) {
+			return;
+		}
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+		System.out.println();
+	}
 
 
 
@@ -196,69 +256,6 @@ public class Code03_PartitionAndQuickSort {
 		process3(arr, equalArea[1] + 1, R);
 	}
 
-
-
-
-
-
-
-
-	// for test
-	public static int[] generateRandomArray(int maxSize, int maxValue) {
-		int[] arr = new int[(int) ((maxSize + 1) * Math.random())];
-		for (int i = 0; i < arr.length; i++) {
-			arr[i] = (int) ((maxValue + 1) * Math.random()) - (int) (maxValue * Math.random());
-		}
-		return arr;
-	}
-
-	// for test
-	public static int[] copyArray(int[] arr) {
-		if (arr == null) {
-			return null;
-		}
-		int[] res = new int[arr.length];
-		for (int i = 0; i < arr.length; i++) {
-			res[i] = arr[i];
-		}
-		return res;
-	}
-
-	// for test
-	public static boolean isEqual(int[] arr1, int[] arr2) {
-		if ((arr1 == null && arr2 != null) || (arr1 != null && arr2 == null)) {
-			return false;
-		}
-		if (arr1 == null && arr2 == null) {
-			return true;
-		}
-		if (arr1.length != arr2.length) {
-			return false;
-		}
-		for (int i = 0; i < arr1.length; i++) {
-			if (arr1[i] != arr2[i]) {
-				return false;
-			}
-		}
-		return true;
-	}
-
-
-
-
-
-	//*******************************************************************
-
-	// for test
-	public static void printArray(int[] arr) {
-		if (arr == null) {
-			return;
-		}
-		for (int i = 0; i < arr.length; i++) {
-			System.out.print(arr[i] + " ");
-		}
-		System.out.println();
-	}
 
 
 	// for test

@@ -1,4 +1,4 @@
-package class06;
+package notThatImportant;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

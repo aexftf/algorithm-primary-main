@@ -1,4 +1,4 @@
-package class04;
+package notThatImportant;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -123,6 +123,19 @@ public class Code02_LinkedListToQueueAndStack {
 		}
 
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	public static void testQueue() {
 		MyQueue<Integer> myQueue = new MyQueue<>();
