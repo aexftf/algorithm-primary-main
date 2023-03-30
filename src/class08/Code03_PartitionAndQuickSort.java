@@ -30,14 +30,8 @@ public class Code03_PartitionAndQuickSort {
 //		swap(arr, moreL, N - 1);
 //	}
 
-	public static void swap(int[] arr, int i, int j) {
-		int tmp = arr[i];
-		arr[i] = arr[j];
-		arr[j] = tmp;
-	}
 
-
-
+//-------------------------------------------------------------------
 
 
 	public static void quickSort1(int[] arr) {
@@ -66,10 +60,11 @@ public class Code03_PartitionAndQuickSort {
 	// arr[L...R]范围上，拿arr[R]做划分值，
 	// L....R < = >
 	public static int[] partition(int[] arr, int L, int R) {
+	//定义三个指针
 		int lessR = L - 1;
 		int moreL = R;
 		int index = L;
-
+	//	交换，使小于标准的数放在左边，大于标准的数放在右边。
 		while (index < moreL) {
 			if (arr[index] < arr[R]) {
 				swap(arr, ++lessR, index++);
@@ -79,13 +74,21 @@ public class Code03_PartitionAndQuickSort {
 				index++;
 			}
 		}
+	//标准数换到中间来
 		swap(arr, moreL, R);
+	//
 		return new int[] { lessR + 1, moreL };
 	}
 
 
 
 
+
+	public static void swap(int[] arr, int i, int j) {
+		int tmp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = tmp;
+	}
 
 
 

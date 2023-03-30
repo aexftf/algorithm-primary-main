@@ -7,6 +7,8 @@ import java.util.Arrays;
  */
 public class Code05_BubbleSort {
 
+
+	//note:两个指针一前一后；一个一直往后循环，一个一直往前走
 	public static void bubbleSort(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;
