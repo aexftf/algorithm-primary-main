@@ -1,4 +1,4 @@
-package class02;
+package notThatImportant;
 
 public class Code03_EqualProbabilityRandom {
 
@@ -51,7 +51,7 @@ public class Code03_EqualProbabilityRandom {
 
 
 
-
+//-----------------------------------------------------------------
 
 	public static void main(String[] args) {
 		int[] count = new int[2];// 0 1

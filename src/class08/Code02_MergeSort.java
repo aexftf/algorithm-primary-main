@@ -1,5 +1,5 @@
 package class08;
-//归并排序
+//归并排序(一般不手撕)
 public class Code02_MergeSort {
 
 	// 递归方法实现

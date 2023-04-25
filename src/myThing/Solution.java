@@ -17,86 +17,43 @@ public class Solution {
 
 
 
-    public static void solveFunctions() {
 
 
 
 
+    public ListNode deleteDuplicationNode (ListNode pHead) {
+        // write code here
 
+        ListNode newHead = new ListNode();
+        ListNode cur=pHead;
+        ListNode tmp=newHead;
+        while(cur!=null){
+            if (cur.next!=null&&cur.val==cur.next.val){
+                while(cur.next!=null&&cur.val==cur.next.val ){
+                    cur=cur.next;
 
-
-
-
-
-
-        //Example
-    }
-
-
-    public int getMaxValue (String str, int k) {
-            if (str == null||str.length() == 0){
-                return 0;
+                }
+                cur=cur.next;
             }
-
-
-        int process = process(str, 0, k, k);
-
-        return  process;
-    }
-
-
-    public static int process (String str, int index,int rest,int k){
-        char[] chars = str.toCharArray();
-        if (index>=chars.length){
-            return 0;
-        }
-
-        int temp=Integer.MAX_VALUE;
-        int i = MaxValue(str,index);
-        int min = Math.min(temp, i);
-        int i1 = process(str, index + 1, k - index, k) + process(str, k - index, k - index, k);
-        return  min;
-    }
-
-
-
-
-    public static  int MaxValue(String str,int index){
-        str = str.substring(index);
-        HashMap<Character, Integer> map = new HashMap<>();
-        char[] chars = str.toCharArray();
-        int length = 0;
-
-        for (int i = 0; i <chars.length ; i++) {
-            length++;
-        }
-        int kindSum=0;
-
-        for (int i = 0; i <chars.length ; i++) {
-
-            if (map.containsKey(chars[i])){
-                map.put(chars[i], map.get(chars[i])+1);
+            else{
+                tmp.next=cur;
+                cur=cur.next;
+                tmp=tmp.next;
             }
-            else {
-                map.put(chars[i],1);
-
-            }
-            Set<Map.Entry<Character, Integer>> entries = map.entrySet();
-
-
-
-            for (Map.Entry<Character, Integer> entry : entries) {
-                Map.Entry<Character, Integer> entry1 = entry;
-                kindSum+=entry1.getValue();
-            }
-
 
         }
-
-        int result =kindSum*length;
-        return result;
+        tmp.next=null;
+        return  newHead.next;
 
     }
+
+
+
+
+
+
+
+
 
 
 
@@ -158,8 +115,8 @@ public class Solution {
 
     public static class TreeNode {
         int val;
-        MySolution.TreeNode left;
-        MySolution.TreeNode right;
+        TreeNode left;
+        TreeNode right;
 
         public TreeNode() {
         }
@@ -178,7 +135,7 @@ public class Solution {
 
     public static class ListNode {
         int val;
-        MySolution.ListNode next;
+        ListNode next;
 
         public ListNode(int val, MySolution.ListNode next) {
             this.val = val;

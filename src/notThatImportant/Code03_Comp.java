@@ -1,4 +1,4 @@
-package class02;
+package notThatImportant;
 
 public class Code03_Comp {
 

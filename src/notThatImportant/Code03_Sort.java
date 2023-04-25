@@ -1,4 +1,4 @@
-package class01;
+package notThatImportant;
 
 public class Code03_Sort {
 
@@ -69,18 +69,18 @@ public class Code03_Sort {
 
 
 
-
-	public static void insertSort2(int[] arr) {
-		if (arr == null || arr.length < 2) {
-			return;
-		}
-		int N = arr.length;
-		for (int end = 1; end < N; end++) {
-			for (int pre = end - 1; pre >= 0 && arr[pre] > arr[pre + 1]; pre--) {
-				swap(arr, pre, pre + 1);
-			}
-		}
-	}
+//
+//	public static void insertSort2(int[] arr) {
+//		if (arr == null || arr.length < 2) {
+//			return;
+//		}
+//		int N = arr.length;
+//		for (int end = 1; end < N; end++) {
+//			for (int pre = end - 1; pre >= 0 && arr[pre] > arr[pre + 1]; pre--) {
+//				swap(arr, pre, pre + 1);
+//			}
+//		}
+//	}
 
 
 
@@ -108,7 +108,7 @@ public class Code03_Sort {
 	public static void main(String[] args) {
 		int[] arr = { 7, 1, 3, 5, 1, 6, 8, 1, 3, 5, 7, 5, 6 };
 		printArray(arr);
-		insertSort2(arr);
+//		insertSort2(arr);
 		printArray(arr);
 	}
 

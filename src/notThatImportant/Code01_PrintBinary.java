@@ -6,26 +6,49 @@ package notThatImportant;
  */
 public class Code01_PrintBinary {
 
+
+
+
+
+
+
 	public static void print(int num) {
 		for (int i = 31; i >= 0; i--) {
 			System.out.print((num & (1 << i)) == 0 ? "0" : "1");
+
 		}
-		System.out.println();
 	}
+
+	public static int binaryToDecimal(int n){
+		       int t = 0;  //用来记录位数
+		       int bin = 0; //用来记录最后的二进制数
+		       int r = 0;  //用来存储余数
+		       while(n != 0){
+			           r = n % 2;
+			           n = n / 2;
+			           bin += r * Math.pow(10,t);
+			           t++;
+			      }
+			   return bin;
+		  }
+
 
 	public static void main(String[] args) {
 //		 32位
-		int num = 4;
 
-		print(num);
+		//整数转换为二进制
+		String s = Integer.toBinaryString(9999);
+//		int inta= Integer.valueOf(s);//太长了他就挂了
 
-//		
-		int test = 1123123;
-		print(test);
-//		print(test<<1);
-//		print(test<<2);
-//		print(test<<8);
-//		
+		int parseInt = Integer.parseInt(s);
+//		System.out.println(inta);
+		System.out.println(parseInt);
+
+
+
+
+
+
 //		
 //		int a = Integer.MAX_VALUE;
 //		System.out.println(a);

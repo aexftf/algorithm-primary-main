@@ -1,4 +1,4 @@
-package class02;
+package notThatImportant;
 
 public class Code02_RandToRand {
 
@@ -103,6 +103,15 @@ public class Code02_RandToRand {
 		return ans + from;
 	}
 
+
+
+
+
+
+
+
+
+	//----------------------------------------------------------
 	public static void main(String[] args) {
 		System.out.println("测试开始");
 		// Math.random() -> double -> [0,1)

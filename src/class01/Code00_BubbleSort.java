@@ -2,10 +2,10 @@ package class01;
 
 import java.util.Arrays;
 
-/**
+/**非常重要老让你手撕,算法老贼我与你势不两立。
  * @author mac
  */
-public class Code05_BubbleSort {
+public class Code00_BubbleSort {
 
 
 	//note:两个指针一前一后；一个一直往后循环，一个一直往前走
