@@ -2,7 +2,7 @@ package class07dontTosee;
 
 // 测试链接：https://leetcode.com/problems/balanced-binary-tree
 public class Code02_BalancedBinaryTree {
-//二叉平衡树
+//验证是不是二叉平衡树
 	public static class TreeNode {
 		public int val;
 		public TreeNode left;
@@ -34,6 +34,7 @@ public class Code02_BalancedBinaryTree {
 		if (root == null) {
 			return new Info(true, 0);
 		}
+
 		Info leftInfo = process(root.left);
 		Info rightInfo = process(root.right);
 

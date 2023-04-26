@@ -7,21 +7,13 @@ import java.util.Queue;
 // 测试链接：https://leetcode.com/problems/binary-tree-level-order-traversal-ii
 public class Code01_BinaryTreeLevelOrderTraversalII {
 
-	public static class TreeNode {
-		public int val;
-		public TreeNode left;
-		public TreeNode right;
-
-		TreeNode(int val) {
-			this.val = val;
-		}
-	}
 
 
 
 
 	public List<List<Integer>> levelOrderBottom(TreeNode root) {
 		List<List<Integer>> ans = new LinkedList<>();
+
 		if (root == null) {
 			return ans;
 		}
@@ -49,5 +41,28 @@ public class Code01_BinaryTreeLevelOrderTraversalII {
 		}
 		return ans;
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static class TreeNode {
+		public int val;
+		public TreeNode left;
+		public TreeNode right;
+
+		TreeNode(int val) {
+			this.val = val;
+		}
+	}
+
 
 }

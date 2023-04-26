@@ -1,5 +1,6 @@
 package class06;
-
+//遍历打印所有树的节点
+//其实除了打印的位置，其他都是一样的，这就是树的递归序；
 public class TraversalBinaryTree {
 
 	public static class Node {
@@ -24,6 +25,8 @@ public class TraversalBinaryTree {
 		pre(head.right);
 	}
 
+
+
 	public static void in(Node head) {
 		if (head == null) {
 			return;
@@ -32,6 +35,7 @@ public class TraversalBinaryTree {
 		System.out.println(head.value);
 		in(head.right);
 	}
+
 
 	public static void pos(Node head) {
 		if (head == null) {
