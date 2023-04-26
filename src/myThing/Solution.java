@@ -125,7 +125,7 @@ public class Solution {
             this.val = val;
         }
 
-        public TreeNode(int val, MySolution.TreeNode left, MySolution.TreeNode right) {
+        public TreeNode(int val,TreeNode left, TreeNode right) {
             this.val = val;
             this.left = left;
             this.right = right;
@@ -133,11 +133,13 @@ public class Solution {
     }
 
 
+
+
     public static class ListNode {
         int val;
         ListNode next;
 
-        public ListNode(int val, MySolution.ListNode next) {
+        public ListNode(int val, ListNode next) {
             this.val = val;
             this.next = next;
         }
@@ -146,11 +148,19 @@ public class Solution {
             this.val = val;
         }
 
-        public ListNode(MySolution.ListNode next) {
+        public ListNode(ListNode next) {
             this.next = next;
         }
 
         public ListNode() {
         }
+
+
     }
+
+
+
+
+
+
 }

@@ -1,11 +1,11 @@
-package class02;
+package notThatImportant.class02;
 
-/**
+/**在一段范围内求和
  * @author mac
  */
 public class Code01_PreSum {
 
-	//
+
 	public static class RangeSum1 {
 
 		private int[] arr;
