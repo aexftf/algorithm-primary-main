@@ -1,7 +1,7 @@
 package class03;
 
 import java.util.Arrays;
-//二分
+//二分法找数，并且数组中顺序最左边的数。
 public class Code02_BSNearLeft {
 
 	// arr有序的，>=num 最左
@@ -16,6 +16,7 @@ public class Code02_BSNearLeft {
 
 		while (L <= R) {
 			int mid = (L + R) / 2;
+			//
 			if (arr[mid] >= num) {
 				ans = mid;
 				R = mid - 1;

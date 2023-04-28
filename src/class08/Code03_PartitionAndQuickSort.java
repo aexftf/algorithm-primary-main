@@ -7,7 +7,7 @@ public class Code03_PartitionAndQuickSort {
 
 
 
-	public static void quickSort1(int[] arr) {
+	public static void quickSort(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;
 		}

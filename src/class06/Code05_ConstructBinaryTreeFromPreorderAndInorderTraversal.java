@@ -6,15 +6,6 @@ import java.util.HashMap;
 //测试链接：https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal
 public class Code05_ConstructBinaryTreeFromPreorderAndInorderTraversal {
 
-	public static class TreeNode {
-		int val;
-		TreeNode left;
-		TreeNode right;
-
-		TreeNode(int val) {
-			this.val = val;
-		}
-	}
 
 
 
@@ -43,6 +34,7 @@ public class Code05_ConstructBinaryTreeFromPreorderAndInorderTraversal {
 			return head;
 		}
 		int find = L2;
+
 		while (in[find] != pre[L1]) {
 			find++;
 		}
@@ -53,6 +45,15 @@ public class Code05_ConstructBinaryTreeFromPreorderAndInorderTraversal {
 	}
 
 
+	public static class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+
+		TreeNode(int val) {
+			this.val = val;
+		}
+	}
 
 
 
