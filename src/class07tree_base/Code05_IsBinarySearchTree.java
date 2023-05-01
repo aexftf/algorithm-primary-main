@@ -1,4 +1,4 @@
-package class07dontTosee;
+package class07tree_base;
 //是否是搜索二叉树
 public class Code05_IsBinarySearchTree {
 

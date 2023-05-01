@@ -2,6 +2,7 @@ package myThing;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 import java.util.Set;
 
 /**
@@ -54,7 +55,19 @@ public class Solution {
 
 
 
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        // 注意 hasNext 和 hasNextLine 的区别
 
+            int a = in.nextInt();
+            int b = in.nextInt();
+
+
+
+        System.out.println(1);
+
+
+    }
 
 
 
@@ -85,23 +98,6 @@ public class Solution {
         return sum;
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    public static void main(String[] args) {
-
-    }
-
 
 
 

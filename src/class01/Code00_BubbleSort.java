@@ -2,7 +2,7 @@ package class01;
 
 import java.util.Arrays;
 
-/**非常重要老让你手撕,算法老贼我与你势不两立。
+/**~>>>非常重要老让你手撕,算法老贼我与你势不两立。
  * @author mac
  */
 public class Code00_BubbleSort {
