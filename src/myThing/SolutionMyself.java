@@ -34,6 +34,9 @@ public class SolutionMyself {
         return head;
     }
 
+
+
+
     public Solution.ListNode reverseList2(Solution.ListNode head) {
         Solution.ListNode pre = null;
 
@@ -64,6 +67,9 @@ public class SolutionMyself {
         return Arrays.equals(target, arry);
     }
 
+
+
+
     //是不是环形链表
     public boolean IsCycle(Solution.ListNode head) {
         HashSet<Solution.ListNode> set = new HashSet<Solution.ListNode>();
@@ -77,6 +83,9 @@ public class SolutionMyself {
 
         return false;
     }
+
+
+
 
     //两链表求重合节点
     public Solution.ListNode getIntersectionListNode(Solution.ListNode headA, Solution.ListNode headB) {
@@ -164,6 +173,8 @@ public class SolutionMyself {
         return true;
     }
 
+
+
     //从小到大顺序合并两个链表
     public Solution.ListNode mergeTwo(Solution.ListNode left, Solution.ListNode right) {
         if (left == null) {
@@ -184,6 +195,9 @@ public class SolutionMyself {
     }
 
 
+
+
+
     public void preorderTraversal(Solution.TreeNode root, List<Solution.TreeNode> list) {
         if (root != null) {
             list.add(root);
@@ -192,6 +206,11 @@ public class SolutionMyself {
         }
 
     }
+
+
+
+
+
 
     //例4：链表划分（86）
     public Solution.ListNode partition(int x, Solution.ListNode head) {
@@ -241,7 +260,10 @@ public class SolutionMyself {
         return smallHead;
     }
 
-    //约瑟夫环（小朋友）未做完
+
+
+
+    //约瑟夫环（干死小朋友）未做完
     public int lastRemainingSolution(int n, int m) {
         // 1. 用首尾连接的循环链表连接小朋友，遍历链表，并计数
         // 2. 计数到m-1时重置计数器，并移除该节点
@@ -336,6 +358,7 @@ class MinStack {
         }
 
 }
+
  //--*******************贪心思想*****************************************
 
     //例1：分发饼干（455）

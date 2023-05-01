@@ -21,40 +21,6 @@ public class Solution {
 
 
 
-
-    public ListNode deleteDuplicationNode (ListNode pHead) {
-        // write code here
-
-        ListNode newHead = new ListNode();
-        ListNode cur=pHead;
-        ListNode tmp=newHead;
-        while(cur!=null){
-            if (cur.next!=null&&cur.val==cur.next.val){
-                while(cur.next!=null&&cur.val==cur.next.val ){
-                    cur=cur.next;
-
-                }
-                cur=cur.next;
-            }
-            else{
-                tmp.next=cur;
-                cur=cur.next;
-                tmp=tmp.next;
-            }
-
-        }
-        tmp.next=null;
-        return  newHead.next;
-
-    }
-
-
-
-
-
-
-
-
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         // 注意 hasNext 和 hasNextLine 的区别
@@ -76,28 +42,6 @@ public class Solution {
 
 
 
-
-
-
-
-
-
-
-    public int getCnt (String str) {
-
-        char[] chars = str.toCharArray();
-            int sum = 0;
-        for (int i = 0; i <chars.length ; i++) {
-
-            if (chars[i]== chars[i+1]||chars[i]==chars[i+1]+32||chars[i]+32==chars[i+1]){
-
-                sum+=1;
-            }
-
-        }
-        return sum;
-
-    }
 
 
 

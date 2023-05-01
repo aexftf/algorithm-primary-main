@@ -4,16 +4,6 @@ package class07tree_base;
 public class Code02_BalancedBinaryTree {
 //验证是不是二叉平衡树
 
-	public static class TreeNode {
-		public int val;
-		public TreeNode left;
-		public TreeNode right;
-
-		TreeNode(int val) {
-			this.val = val;
-		}
-	}
-
 	public static class Info {
 		public boolean isBalanced;
 		public int height;
@@ -26,11 +16,13 @@ public class Code02_BalancedBinaryTree {
 
 
 
-
+//主方法
 	public static boolean isBalanced(TreeNode root) {
 		return process(root).isBalanced;
 	}
 
+
+	//递归
 	public static Info process(TreeNode root) {
 		if (root == null) {
 			return new Info(true, 0);
@@ -45,6 +37,22 @@ public class Code02_BalancedBinaryTree {
 				&& Math.abs(leftInfo.height - rightInfo.height) < 2;
 
 		return new Info(isBalanced, height);
+	}
+
+
+
+
+
+
+
+	public static class TreeNode {
+		public int val;
+		public TreeNode left;
+		public TreeNode right;
+
+		TreeNode(int val) {
+			this.val = val;
+		}
 	}
 
 }

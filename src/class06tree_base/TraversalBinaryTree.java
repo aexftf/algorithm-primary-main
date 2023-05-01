@@ -1,4 +1,4 @@
-package class06;
+package class06tree_base;
 //遍历打印所有树的节点
 //其实除了打印的位置，其他都是一样的，这就是树的递归序；
 public class TraversalBinaryTree {

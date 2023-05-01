@@ -2,12 +2,15 @@ package class07tree_base;
 
 import java.util.ArrayList;
 import java.util.List;
-//给定root一棵二叉树的 和一个整数targetSum，返回路径中节点值之和等于 的所有根到叶targetSum路径。每条路径都应作为节点值列表返回，而不是节点引用。
+//给定root一棵二叉树的 和一个整数targetSum，返回路径中节点值之和等于 的所有根到叶targetSum路径。
+// 每条路径都应作为节点值列表返回，而不是节点引用。
 //
 //根到叶路径是从根开始到任何叶节点结束的路径。叶子是没有孩子的节点。
 //
-//
+//和一不同的是返回的参数，这个是返回路径列表，第一个是返回boolen值
 public class Code04_PathSumII {
+
+
 
 	// 测试链接：https://leetcode.com/problems/path-sum-ii
 	public static class TreeNode {
@@ -29,11 +32,15 @@ public class Code04_PathSumII {
 
 	public static List<List<Integer>> pathSum(TreeNode root, int sum) {
 		List<List<Integer>> ans = new ArrayList<>();
+
 		if (root == null) {
 			return ans;
 		}
+
 		ArrayList<Integer> path = new ArrayList<>();
+
 		process(root, path, 0, sum, ans);
+
 		return ans;
 	}
 
@@ -65,13 +72,19 @@ public class Code04_PathSumII {
 
 
 
-
+//
 	public static List<Integer> copy(List<Integer> path) {
 		List<Integer> ans = new ArrayList<>();
+
 		for (Integer num : path) {
 			ans.add(num);
 		}
+
 		return ans;
 	}
+
+
+
+
 
 }

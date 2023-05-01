@@ -4,7 +4,7 @@ public class Code05_IsBinarySearchTree {
 
 
 
-
+//要表达的数据模型
 	public static class Info {
 		public boolean isBST;
 		public int max;
@@ -15,10 +15,12 @@ public class Code05_IsBinarySearchTree {
 			max = ma;
 			min = mi;
 		}
+
 	}
 
 
 
+//递归树
 	public static Info process(TreeNode x) {
 		if (x == null) {
 			return null;
@@ -26,6 +28,9 @@ public class Code05_IsBinarySearchTree {
 
 		Info leftInfo = process(x.left);
 		Info rightInfo = process(x.right);
+
+
+		//求最大最小值-------------------------
 
 		int max = x.val;
 		int min = x.val;
@@ -39,21 +44,27 @@ public class Code05_IsBinarySearchTree {
 			max = Math.max(rightInfo.max, max);
 			min = Math.min(rightInfo.min, min);
 		}
+		//求最大最小值-------------------------
 
 
 		boolean isBST = false;
-
+//
 		boolean leftIsBst = leftInfo == null ? true : leftInfo.isBST;
 		boolean rightIsBst = rightInfo == null ? true : rightInfo.isBST;
-
+//开R:要满足二分搜索树
 		boolean leftMaxLessX = leftInfo == null ? true : (leftInfo.max < x.val);
 		boolean rightMinMoreX = rightInfo == null ? true : (rightInfo.min > x.val);
 
 		if (leftIsBst && rightIsBst && leftMaxLessX && rightMinMoreX) {
 			isBST = true;
 		}
+
 		return new Info(isBST, max, min);
 	}
+
+
+
+
 
 
 
