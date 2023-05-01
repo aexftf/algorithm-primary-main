@@ -1,19 +1,6 @@
 package class04;
-
-import java.util.ArrayList;
-import java.util.List;
-
+//重点常考
 public class Code01_ReverseList {
-
-	public static class DoubleNode {
-		public int value;
-		public DoubleNode last;
-		public DoubleNode next;
-
-		public DoubleNode(int data) {
-			value = data;
-		}
-	}
 
 
 
@@ -63,6 +50,7 @@ public class Code01_ReverseList {
 
 
 
+
 	//------------------------------------------------------------
 
 
@@ -80,6 +68,15 @@ public class Code01_ReverseList {
 	}
 
 
+	public static class DoubleNode {
+		public int value;
+		public DoubleNode last;
+		public DoubleNode next;
+
+		public DoubleNode(int data) {
+			value = data;
+		}
+	}
 
 
 
