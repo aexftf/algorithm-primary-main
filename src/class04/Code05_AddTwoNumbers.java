@@ -40,6 +40,7 @@ public class Code05_AddTwoNumbers {
 		if (carry != 0) {
 			last.next = new ListNode(1);
 		}
+
 		return l;
 	}
 
@@ -60,7 +61,8 @@ public class Code05_AddTwoNumbers {
 
 
 
-	// 不要提交这个类
+
+
 	public static class ListNode {
 		public int val;
 		public ListNode next;
