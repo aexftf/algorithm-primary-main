@@ -1,8 +1,8 @@
 package class08;
 //要想pua别人，就要先pua自己
-import java.util.Stack;
+
 //fuck大厂手撕
-public class Code03_PartitionAndQuickSort {
+public class Code03_QuickSort {
 
 
 //快排我的理解其实是先排中间的部分使其有序，然后再递归到最小的两个数都有序，其实就全部有序了。

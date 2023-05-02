@@ -15,7 +15,6 @@ public class Code02_BalancedBinaryTree {
 	}
 
 
-
 //主方法
 	public static boolean isBalanced(TreeNode root) {
 		return process(root).isBalanced;
@@ -38,6 +37,10 @@ public class Code02_BalancedBinaryTree {
 
 		return new Info(isBalanced, height);
 	}
+
+
+
+
 
 
 

@@ -30,7 +30,7 @@ public class Code05_IsBinarySearchTree {
 		Info rightInfo = process(x.right);
 
 
-		//求最大最小值-------------------------
+		//整体树上元素的求最大最小值-------------------------
 
 		int max = x.val;
 		int min = x.val;
@@ -44,14 +44,15 @@ public class Code05_IsBinarySearchTree {
 			max = Math.max(rightInfo.max, max);
 			min = Math.min(rightInfo.min, min);
 		}
-		//求最大最小值-------------------------
+		//整体树上元素的求最大最小值-------------------------
 
 
 		boolean isBST = false;
-//
+//左树是二分搜素树
+//右树是二分搜索树
 		boolean leftIsBst = leftInfo == null ? true : leftInfo.isBST;
 		boolean rightIsBst = rightInfo == null ? true : rightInfo.isBST;
-//开R:要满足二分搜索树
+//整体树范围内要满足二分搜索树
 		boolean leftMaxLessX = leftInfo == null ? true : (leftInfo.max < x.val);
 		boolean rightMinMoreX = rightInfo == null ? true : (rightInfo.min > x.val);
 
@@ -61,6 +62,16 @@ public class Code05_IsBinarySearchTree {
 
 		return new Info(isBST, max, min);
 	}
+
+
+
+
+
+
+
+
+
+
 
 
 

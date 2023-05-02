@@ -1,20 +1,23 @@
 package class04;
 
+import java.util.List;
+
 // 测试链接：https://leetcode.com/problems/merge-two-sorted-lists
 public class Code06_MergeTwoSortedLinkedList {
 
 
 	public static ListNode mergeTwoLists(ListNode head1, ListNode head2) {
-
+//
 		if (head1 == null || head2 == null) {
 			return head1 == null ? head2 : head1;
 		}
-
+//
 		ListNode head = head1.val <= head2.val ? head1 : head2;
-		ListNode cur1 = head.next;
-		ListNode cur2 = head == head1 ? head2 : head1;
-		ListNode pre = head;
+		ListNode cur1 = head.next;//暂时指向虚无
+		ListNode cur2 = head == head1 ? head2 : head1;//暂时指向虚无
 
+		ListNode pre = head;//从你开始了
+//
 		while (cur1 != null && cur2 != null) {
 			if (cur1.val <= cur2.val) {
 				pre.next = cur1;
@@ -29,12 +32,6 @@ public class Code06_MergeTwoSortedLinkedList {
 		pre.next = cur1 != null ? cur1 : cur2;
 		return head;
 	}
-
-
-
-
-
-
 
 
 

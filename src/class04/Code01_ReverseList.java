@@ -7,12 +7,11 @@ public class Code01_ReverseList {
 
 
 	//面试必考
-
 	public static Node reverseLinkedList(Node head) {
 		Node pre = null;
 		Node next = null;
 
-		while (head != null) {
+		while (head != null) {//记住：所有元素都改过，这样就不会漏掉元素。
 			next = head.next;
 			head.next = pre;
 
@@ -21,6 +20,8 @@ public class Code01_ReverseList {
 		}
 		return pre;
 	}
+
+
 
 
 

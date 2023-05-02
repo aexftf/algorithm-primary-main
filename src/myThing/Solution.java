@@ -1,5 +1,7 @@
 package myThing;
 
+import class04.Code05_AddTwoNumbers;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -58,6 +60,15 @@ public class Solution {
         arr[j] = tmp;
     }
 
+    public static int listLength(Code05_AddTwoNumbers.ListNode head) {
+        int len = 0;
+
+        while (head != null) {
+            len++;
+            head = head.next;
+        }
+        return len;
+    }
 
 
     public static class TreeNode {

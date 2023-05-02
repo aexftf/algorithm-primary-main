@@ -24,7 +24,7 @@ public class Code03_PathSum {
 			return false;
 		}
 
-//		isSum = false;
+		isSum = false;
 		process(root, 0, sum);
 		return isSum;
 	}
@@ -50,27 +50,6 @@ public class Code03_PathSum {
 	}
 
 
-
-
-
-
-
-
-//	public static boolean hasPathSum(TreeNode root, int sum) {
-//		if (root == null) {
-//			return false;
-//		}
-//		return process(root, sum);
-//	}
-//
-//	public static boolean process(TreeNode root, int rest) {
-//		if (root.left == null && root.right == null) {
-//			return root.val == rest;
-//		}
-//		boolean ans = root.left != null ? process(root.left, rest - root.val) : false;
-//		ans |= root.right != null ? process(root.right, rest - root.val) : false;
-//		return ans;
-//	}
 
 
 

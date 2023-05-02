@@ -3,7 +3,7 @@ package class07tree_base;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-
+//给你二叉树的根节点 root ，返回其节点值 自底向上的层序遍历 。 （即按从叶子节点所在层到根节点所在的层，逐层从左向右遍历）
 // 测试链接：https://leetcode.com/problems/binary-tree-level-order-traversal-ii
 public class Code01_BinaryTreeLevelOrderTraversalII {
 
@@ -12,17 +12,26 @@ public class Code01_BinaryTreeLevelOrderTraversalII {
 
 
 	public List<List<Integer>> levelOrderBottom(TreeNode root) {
+
 		List<List<Integer>> ans = new LinkedList<>();
+		LinkedList<LinkedList<Integer>> ans1 = new LinkedList<>();
 
 		if (root == null) {
 			return ans;
+		}
+		if (root==null){
+			return ans1;
 		}
 
 		Queue<TreeNode> queue = new LinkedList<>();
 		queue.add(root);
 
+		Queue<TreeNode>queue1 =new LinkedList<>();
+		queue1.add(root);
+
 		while (!queue.isEmpty()) {
 			int size = queue.size();
+
 			List<Integer> curAns = new LinkedList<>();
 
 			for (int i = 0; i < size; i++) {
@@ -40,6 +49,25 @@ public class Code01_BinaryTreeLevelOrderTraversalII {
 			ans.add(0, curAns);
 		}
 		return ans;
+
+
+
+
+		while (!queue1.isEmpty()){
+			int size = queue1.size();
+			LinkedList<Integer> curAns = new LinkedList<>();
+			for (int i = 0; i <size ; i++) {
+					queue1.
+			}
+
+
+		}
+
+
+
+
+
+
 	}
 
 

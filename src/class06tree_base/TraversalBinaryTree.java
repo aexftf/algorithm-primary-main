@@ -3,16 +3,6 @@ package class06tree_base;
 //其实除了打印的位置，其他都是一样的，这就是树的递归序；
 public class TraversalBinaryTree {
 
-	public static class Node {
-		public int value;
-		public Node left;
-		public Node right;
-
-		public Node(int v) {
-			value = v;
-		}
-	}
-
 
 
 	// 先序打印所有节点
@@ -50,8 +40,6 @@ public class TraversalBinaryTree {
 
 
 
-
-
 	public static void f(Node head) {
 		if (head == null) {
 			return;
@@ -78,26 +66,18 @@ public class TraversalBinaryTree {
 
 
 
+	public static class Node {
+		public int value;
+		public Node left;
+		public Node right;
 
-
-
-
-	public static void main(String[] args) {
-		Node head = new Node(1);
-		head.left = new Node(2);
-		head.right = new Node(3);
-		head.left.left = new Node(4);
-		head.left.right = new Node(5);
-		head.right.left = new Node(6);
-		head.right.right = new Node(7);
-
-		pre(head);
-		System.out.println("========");
-		in(head);
-		System.out.println("========");
-		pos(head);
-		System.out.println("========");
-
+		public Node(int v) {
+			value = v;
+		}
 	}
+
+
+
+
 
 }

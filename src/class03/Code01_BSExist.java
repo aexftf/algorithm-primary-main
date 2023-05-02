@@ -12,7 +12,7 @@ public class Code01_BSExist {
 	 * @param num
 	 * @return boolean
 	 **/
-	// arr保证有序
+	// arr必须保证有序
 	public static boolean find(int[] arr, int num) {
 		if (arr == null || arr.length == 0) {
 			return false;

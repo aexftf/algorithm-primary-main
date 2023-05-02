@@ -7,9 +7,12 @@ package class04;
 public class Code05_AddTwoNumbers {
 
 	public static ListNode addTwoNumbers(ListNode head1, ListNode head2) {
+		//当工具类，求长度
 		int len1 = listLength(head1);
 		int len2 = listLength(head2);
 
+
+		//求长度长的列表，l是长的，r是短的。
 		ListNode l =  len1 >= len2 ? head1 : head2;//长链表
 		ListNode s = l == head1 ? head2 : head1; //短链表
 
@@ -20,23 +23,27 @@ public class Code05_AddTwoNumbers {
 		int carry = 0;
 		int curNum = 0;
 
-		while (curS != null) {
-			curNum = curL.val + curS.val + carry;
-			curL.val = (curNum % 10);
-			carry = curNum / 10;
+		while (curS != null) {//短的没完，都加
+			curNum = curL.val + curS.val + carry;//现在的数
+			curL.val = (curNum % 10);           //个位数
+			carry = curNum / 10;				//进位数
+
 			last = curL;
+
 			curL = curL.next;
 			curS = curS.next;
 		}
 
-		while (curL != null) {
+		while (curL != null) { //短的遍历完了,只剩下长的了。
 			curNum = curL.val + carry;
 			curL.val = (curNum % 10);
 			carry = curNum / 10;
+
 			last = curL;
 			curL = curL.next;
 		}
 
+		//last变量就为了这个
 		if (carry != 0) {
 			last.next = new ListNode(1);
 		}
@@ -46,15 +53,48 @@ public class Code05_AddTwoNumbers {
 
 
 
-	// 求链表长度
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// 求链表长度，太简单了，当工具方法吧
 	public static int listLength(ListNode head) {
 		int len = 0;
+
 		while (head != null) {
 			len++;
 			head = head.next;
 		}
 		return len;
 	}
+
+
+
+
+
+
+
 
 
 
@@ -76,6 +116,19 @@ public class Code05_AddTwoNumbers {
 			this.next = next;
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
