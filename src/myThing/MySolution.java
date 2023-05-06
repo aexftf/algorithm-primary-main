@@ -114,9 +114,7 @@ public class MySolution {
 
 
 
-        public static void solveFunctions() {
 
-    }
 
 //字符串修改
 //时间限制： 3000MS

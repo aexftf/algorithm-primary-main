@@ -1,5 +1,5 @@
 package class07tree_base;
-
+//笔试
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -12,22 +12,15 @@ public class Code01_BinaryTreeLevelOrderTraversalII {
 
 
 	public List<List<Integer>> levelOrderBottom(TreeNode root) {
-
+		//结果集
 		List<List<Integer>> ans = new LinkedList<>();
-		LinkedList<LinkedList<Integer>> ans1 = new LinkedList<>();
 
 		if (root == null) {
 			return ans;
 		}
-		if (root==null){
-			return ans1;
-		}
-
+		//队列
 		Queue<TreeNode> queue = new LinkedList<>();
 		queue.add(root);
-
-		Queue<TreeNode>queue1 =new LinkedList<>();
-		queue1.add(root);
 
 		while (!queue.isEmpty()) {
 			int size = queue.size();
@@ -35,9 +28,10 @@ public class Code01_BinaryTreeLevelOrderTraversalII {
 			List<Integer> curAns = new LinkedList<>();
 
 			for (int i = 0; i < size; i++) {
+                //
 				TreeNode curNode = queue.poll();
 				curAns.add(curNode.val);
-
+                //
 				if (curNode.left != null) {
 					queue.add(curNode.left);
 				}
@@ -45,29 +39,10 @@ public class Code01_BinaryTreeLevelOrderTraversalII {
 					queue.add(curNode.right);
 				}
 			}
-
+//
 			ans.add(0, curAns);
 		}
 		return ans;
-
-
-
-
-		while (!queue1.isEmpty()){
-			int size = queue1.size();
-			LinkedList<Integer> curAns = new LinkedList<>();
-			for (int i = 0; i <size ; i++) {
-					queue1.
-			}
-
-
-		}
-
-
-
-
-
-
 	}
 
 
@@ -77,7 +52,7 @@ public class Code01_BinaryTreeLevelOrderTraversalII {
 
 
 
-
+//=========================================================================
 
 
 

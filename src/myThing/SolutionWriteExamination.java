@@ -2,23 +2,19 @@ package myThing;
 
 import class04.Code05_AddTwoNumbers;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
-import java.util.Set;
 
-/**正式面试用
+/**正式笔试用
  * TODO
- * 几个建议：
- * 1用固定数组不要用动态数组
- * 2脑子里要有东西，记着做过的题的模版模仿
- * 3
- *
+ *几个建议：
+ *  * 1用固定数组不要用动态数组
+ *  * 2脑子里要有东西，记着做过的题的模版模仿
+ *  * 3 换个设备读题
  * @author Jack Geller
  * @version 1.0
- * @date 2023年03月12日 20:58
+ * @date 2023年05月06日 18:33
  */
-public class Solution {
+public class SolutionWriteExamination {
 
 
 
@@ -26,9 +22,31 @@ public class Solution {
 
 
 
-    public static void solveFunctions() {
-//here
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        // 注意 hasNext 和 hasNextLine 的区别
+
+        int a = in.nextInt();
+        int b = in.nextInt();
+
+
+
+        System.out.println(1);
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -85,8 +103,8 @@ public class Solution {
 
     public static class TreeNode {
         int val;
-        TreeNode left;
-        TreeNode right;
+        Solution.TreeNode left;
+        Solution.TreeNode right;
 
         public TreeNode() {
         }
@@ -95,7 +113,7 @@ public class Solution {
             this.val = val;
         }
 
-        public TreeNode(int val,TreeNode left, TreeNode right) {
+        public TreeNode(int val, Solution.TreeNode left, Solution.TreeNode right) {
             this.val = val;
             this.left = left;
             this.right = right;
@@ -107,9 +125,9 @@ public class Solution {
 
     public static class ListNode {
         int val;
-        ListNode next;
+        Solution.ListNode next;
 
-        public ListNode(int val, ListNode next) {
+        public ListNode(int val, Solution.ListNode next) {
             this.val = val;
             this.next = next;
         }
@@ -118,7 +136,7 @@ public class Solution {
             this.val = val;
         }
 
-        public ListNode(ListNode next) {
+        public ListNode(Solution.ListNode next) {
             this.next = next;
         }
 
@@ -127,7 +145,6 @@ public class Solution {
 
 
     }
-
 
 
 
