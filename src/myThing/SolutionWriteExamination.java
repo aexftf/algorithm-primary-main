@@ -10,6 +10,7 @@ import java.util.Scanner;
  *  * 1用固定数组不要用动态数组
  *  * 2脑子里要有东西，记着做过的题的模版模仿
  *  * 3 换个设备读题
+ *    4微信读图和网页gpt
  * @author Jack Geller
  * @version 1.0
  * @date 2023年05月06日 18:33
@@ -28,7 +29,6 @@ public class SolutionWriteExamination {
 
         int a = in.nextInt();
         int b = in.nextInt();
-
 
 
         System.out.println(1);
