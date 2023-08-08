@@ -112,6 +112,27 @@ public class MySolution {
 
 
 
+    //外企大厂一面
+    public static void solveFunctions() {
+//here
+        ListNode node0 = new ListNode(0);
+        ListNode node1 = new ListNode(1);
+        ListNode node2 = new ListNode(2);
+        ListNode node3 = new ListNode(3);
+
+
+        node0.next=node1;
+        node1.next=node2;
+        node2.next=node3;
+
+        ListNode node=node0;
+        while (node!=null){
+
+            System.out.println(node.val);
+            node=node.next;
+        }
+
+    }
 
 
 

@@ -23,16 +23,21 @@ public class Solution {
 
 
 
-
-
-
     public static void solveFunctions() {
 //here
+
     }
 
 
+
+
+
+
+
+
     public static void main(String[] args) {
-        System.out.println(4&7);
+        solveFunctions();
+
     }
 
 
