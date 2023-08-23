@@ -48,35 +48,6 @@ public class Code01_BSExist {
 
 
 
-public static boolean find1(int[]arr,int num){
-		if (arr==null||arr.length==0){
-			return false;
-		}
-
-		int L=0;
-		int R=arr.length-1;
-		int mid=(R+L)/2;
-
-		while(L<=R){
-
-			if (arr[mid]<num){
-				L=mid+1;
-			} else if (arr[mid]>num) {
-				R=mid-1;
-			}
-			else {
-
-				return true;
-			}
-
-		}
-
-		return false;
-
-
-}
-
-
 
 
 

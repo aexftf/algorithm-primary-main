@@ -1,7 +1,7 @@
 package class01;
 
 import java.util.Arrays;
-//
+//一般不会考你
 public class Code06_InsertionSort {
 
 	public static void insertionSort(int[] arr) {

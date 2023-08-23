@@ -41,7 +41,7 @@ public class SumThreadSingle {
 
         public static int sum(int[] array) {
             SumThread t1 = new SumThread(array, 0, array.length/2);
-            SumThread t2 = new SumThread(array, array.length/2, array.length);
+            SumThread t2 = new SumThread(array, array.length/2, array.length-1);
 
             t1.start();
             t2.start();

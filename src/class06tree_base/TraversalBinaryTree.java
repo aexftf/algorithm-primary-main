@@ -39,7 +39,6 @@ public class TraversalBinaryTree {
 
 
 
-
 	public static void f(Node head) {
 		if (head == null) {
 			return;

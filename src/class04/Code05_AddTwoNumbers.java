@@ -39,7 +39,7 @@ public class Code05_AddTwoNumbers {
 			curL.val = (curNum % 10);
 			carry = curNum / 10;
 
-			last = curL;
+			last = curL;//最后一个是curL是null，所以就存起来保住；
 			curL = curL.next;
 		}
 
