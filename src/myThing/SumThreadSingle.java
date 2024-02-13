@@ -1,10 +1,12 @@
 package myThing;
 
+import java.util.concurrent.Callable;
+
 /**
  * TODO
  *
  * @author Jack Geller
- * @version 1.0
+ * @version 1.0一般就用继承thread就够了
  * @date 2023年07月28日 17:48
  */
 public class SumThreadSingle {
@@ -33,9 +35,6 @@ public class SumThreadSingle {
         }
 
     }
-
-
-
 
 
 

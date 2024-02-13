@@ -2,9 +2,7 @@ package myThing;
 
 import org.omg.CORBA.Object;
 //算法使我快乐，我爱算法啊啊
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * =
@@ -12,8 +10,32 @@ import java.util.Stack;
 public class MySolution {
 
 
-    public static void main(String[] args) {
 
+    public class Main {
+        public static void main(String[] args) {
+            List<Integer> list = Arrays.asList(3, 2, 1, 1, 4, 2);
+
+// 去重
+            Iterator<Integer> it = list.iterator();
+            while(it.hasNext()) {
+                Integer i = it.next();
+                if(list.indexOf(i) != list.lastIndexOf(i)) {
+                    it.remove();
+                }
+            }
+
+// 排序
+            it = list.iterator();
+            List<Integer> sortedList = new ArrayList<>();
+            while(it.hasNext()) {
+                Integer i = it.next();
+                if(!sortedList.contains(i)) {
+                    sortedList.add(i);
+                }
+            }
+
+            System.out.println(sortedList);
+        }
     }
 
 
@@ -329,8 +351,44 @@ public class MySolution {
 
 
 
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        // 注意 hasNext 和 hasNextLine 的区别
+//        while (in.hasNextLine()) { // 注意 while 处理多个 case
+//            String a="";
+//            a = in.next()+""+a;
+//
+//        }
+        String a = in.nextLine();
+        int b = in.nextInt();
 
+    }
 
+    public String highestGCRatio(String dna, int subLength) {
+        int max = 0;
+        String sub = "";
+
+        for (int i = 0; i < dna.length() - subLength + 1; i++) {
+            String currSub = dna.substring(i, i + subLength);
+            int gc = calcGC(currSub);
+            if (gc > max) {
+                max = gc;
+                sub = currSub;
+            }
+        }
+
+        return sub;
+    }
+
+    public int calcGC(String sub) {
+        int g = 0, c = 0;
+        for (char ch : sub.toCharArray()) {
+            if (ch == 'G') g++;
+            if (ch == 'C') c++;
+        }
+
+        return (g + c) * 100 / sub.length();
+    }
 
 
 
