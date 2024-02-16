@@ -108,33 +108,6 @@
 //
 //
 ////把一个数组转换成链表，打印链表
-//
-//
-//
-//
-//
-////
-////
-////    public static class ListNode {
-////        int val;
-////        MySolution.ListNode next;
-////
-////        public ListNode(int val, MySolution.ListNode next) {
-////            this.val = val;
-////            this.next = next;
-////        }
-////
-////        public ListNode(int val) {
-////            this.val = val;
-////        }
-////
-////        public ListNode(MySolution.ListNode next) {
-////            this.next = next;
-////        }
-////
-////        public ListNode() {
-////        }
-////    }
 ////
 ////
 ////

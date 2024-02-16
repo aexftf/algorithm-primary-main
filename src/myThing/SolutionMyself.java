@@ -37,23 +37,6 @@
 //
 //
 //
-//    public MySolution.ListNode reverseList2(MySolution.ListNode head) {
-//        MySolution.ListNode pre = null;
-//
-//        MySolution.ListNode current = head;
-//
-//        while (current != null) {
-//
-//            MySolution.ListNode next = current.next;
-//            current.next = pre;
-//
-//            pre = current;
-//            current = next;
-//        }
-//            return head;
-//    }
-//
-//
 //
 //
 //    /**
