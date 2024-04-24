@@ -5,7 +5,7 @@ import org.omg.CORBA.Object;
 import java.util.*;
 
 /**
- * 复习
+ * 复习用
  */
 public class MySolution {
 
