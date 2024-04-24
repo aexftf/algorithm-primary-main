@@ -1,4 +1,4 @@
-package core.designPatterns;
+package notThatImportant;
 
 /**
  * 设计模式都是在代码重构时应用，代码实现功能时不用设计模式。能跑即可。
@@ -12,7 +12,7 @@ public class Singleton {
 
 
     public static Singleton getInstance() {
-        if (instance == null) {
+        if (instance == null) {//防止序列化实例生成
             synchronized (Singleton.class) {
                 if (instance == null) {
 

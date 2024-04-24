@@ -11,9 +11,9 @@ public class SingletonDemo {
     private SingletonDemo() {}
 
     public static SingletonDemo getInstance() {
-        if (instance == null){
+        if (instance == null){//防止序列化实例生成
            synchronized (SingletonDemo.class){
-               if (instance == null){
+               if (instance == null){//防止已经有实例
                    instance =  new SingletonDemo();
                }
 
