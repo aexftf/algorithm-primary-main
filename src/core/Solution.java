@@ -4,22 +4,6 @@ package core;
  * 正式面试用
  */
 public class Solution {
-
-
-    public void solveFunctions() {
-        //Example
-    }
-
-
-    //for Test
-    public static void main(String[] args) {
-    //今天你测试了吗？
-
-
-    }
-
-
-
 //工厂模式（Factory Pattern）：适用于需要创建多种产品对象的场景，将对象的创建过程放到工厂类中，客户端通过工厂类获取需要的对象。
 //开源应用场景：Spring框架中的BeanFactory，可以根据配置文件中的配置信息创建不同的Bean对象。
 //
@@ -46,66 +30,6 @@ public class Solution {
 //示例代码：Java SE源码中的Collections类中的sort方法
 
 
-
-//
-//public ListNode reverseList(ListNode head){
-//    ListNode pre = null;
-//    ListNode current = head;
-//
-//    while(current != null){
-//        //score
-//        ListNode next = current.next;
-//        current.next=pre;
-//        //准备下一轮
-//        pre=current;
-//        current=next;
-//    }
-//    return head;
-
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        public TreeNode() {
-        }
-
-        public TreeNode(int val) {
-            this.val = val;
-        }
-
-        public TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
-
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        public ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-
-        public ListNode(int val) {
-            this.val = val;
-        }
-
-        public ListNode(ListNode next) {
-            this.next = next;
-        }
-
-        public ListNode() {
-
-        }
-
-
-    }
 
 
 }

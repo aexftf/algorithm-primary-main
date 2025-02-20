@@ -1,9 +1,9 @@
 package core;
 
-import org.springframework.stereotype.Service;
+//import org.springframework.stereotype.Service;
 
 import java.util.concurrent.*;
-@Service
+//@Service
 public  class ThreadPoolDemo {
     LinkedBlockingQueue<Runnable> threadQueue = new LinkedBlockingQueue<>();
         /**

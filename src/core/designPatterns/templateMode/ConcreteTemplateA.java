@@ -26,7 +26,7 @@ public class ConcreteTemplateA extends AbstractTemplate{
 
 
         ConcreteTemplateB concreteTemplateB = new ConcreteTemplateB();
-        concreteTemplateA.doService(1);
+        concreteTemplateB.doService(1);
 
     }
 

@@ -12,7 +12,7 @@ public class MySolution {
 
 
     public class Main {
-        public static void main(String[] args) {
+        public void main(String[] args) {
             List<Integer> list = Arrays.asList(3, 2, 1, 1, 4, 2);
 
 // 去重

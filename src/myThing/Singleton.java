@@ -1,4 +1,4 @@
-package notThatImportant;
+package myThing;
 
 /**
  * 设计模式都是在代码重构时应用，代码实现功能时不用设计模式。能跑即可。
